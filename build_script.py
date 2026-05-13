@@ -138,9 +138,9 @@ details {  }
 summary { padding: 10px; font-size: 13px; font-weight: 600; cursor: pointer; user-select: none; outline: none; display: flex; align-items: center; gap: 8px; border-top:1px solid #eee;}
 .content { padding: 10px; background: #fff; font-size:12px;}
 
-.upload-zone { display: block; text-align: center; padding: 15px; background: #ddd; border: 1px dashed #aaa; border-radius: 5px; cursor: pointer; color: #555; text-decoration: none; margin-top: auto; font-size:12px; }
+.upload-zone { display: block; text-align: center; padding: 15px; background: #ddd; border: 1px dashed #aaa; border-radius: 5px; cursor: pointer; color: #555; text-decoration: none; margin-top: auto; }
 .upload-zone input { display:none; }
-.dataset-item { background: white; padding: 6px 10px; border-radius: 6px; margin-bottom: 5px; display: flex; align-items: center; font-size: 12px; cursor: pointer; border: 1px solid transparent; gap:5px;}
+.dataset-item { background: white; padding: 6px 10px; border-radius: 6px; margin-bottom: 5px; display: flex; align-items: center; font-size: 12px; cursor: pointer; border: 1px solid transparent; }
 .dataset-item.active-ds { background:#eef5ff; border-color: var(--accent); }
 .ds-name { flex:1; margin-left: 5px; outline:none; border:none; background:transparent; font-size:12px; width:100%;}
 .btn { padding: 5px 10px; border: 1px solid var(--border); border-radius: 4px; background: white; cursor: pointer; font-size: 11px; font-family: inherit; }
@@ -491,6 +491,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 """
 
-with open("XRD.html", "w") as f: f.write(html)
+with open("index.html", "w") as f: f.write(html)
 with open("style.css", "w") as f: f.write(css)
 with open("app.js", "w") as f: f.write(js)
